@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Fontdiner Swanky";
+  src: url("../fonts/FontdinerSwanky-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .menu {
   display: flex;
   gap: 2rem;
@@ -19,4 +27,7 @@
   padding: 0.8rem 2rem;
   margin: -0.5rem 0;
   font-size: 1.2rem;
+}
+.logo{
+    font-family: "Fontdiner Swanky";
 }
