@@ -1,4 +1,22 @@
 .menu {
-    display: flex;
-    border: 5px solid black;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #262626;
+  font-weight: 800;
+}
+.list {
+  display: flex;
+  gap: 2rem;
+}
+.contactBtn {
+  border: 0.2rem solid white;
+  border-radius: 5%;
+  padding: 0.8rem 2rem;
+  margin: -0.5rem 0;
+  font-size: 1.2rem;
 }
