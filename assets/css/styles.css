@@ -5,18 +5,22 @@
   font-style: normal;
   font-display: swap;
 }
+:root{
+    --sizeA:1rem;
+}
 .menu {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: calc(2*var(--sizeA));
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
-  font-size: 1.3rem;
+  padding: calc(2*var(--sizeA)) calc(3*var(--sizeA));
+  font-size: calc(1.3*var(--sizeA));
   font-family: monospace;
   color: white;
   background-color: #262626;
   font-weight: 800;
-  min-width: 100vw;
+  width: 100%;
   min-height: 5rem;
 }
 .menuOptions,
@@ -25,27 +29,48 @@
 }
 .list {
   display: flex;
-  gap: 2rem;
+  gap: calc(2*var(--sizeA));
 }
 .contactBtn {
-  border: 0.2rem solid white;
+  border: calc(0.2*var(--sizeA)) solid white;
   border-radius: 5%;
-  padding: 0.8rem 2rem;
-  margin: -0.5rem 0;
-  font-size: 1.2rem;
-   transition: background-color 0.5s ease;
+  padding: calc(0.8*var(--sizeA)) calc(2*var(--sizeA));
+  margin: calc(-0.5*var(--sizeA)) 0;
+  font-size: calc(1.2*var(--sizeA));
+  transition: background-color 0.5s ease;
 }
 .contactBtn:hover {
-    border: 0.2rem solid white;
-    color:#262626;
-    background-color: white;
+  border: calc(0.2*var(--sizeA)) solid white;
+  color: #262626;
+  background-color: white;
 }
 .logo {
   font-family: "Fontdiner Swanky";
-  font-size: 1.5rem;
+  font-size: calc(1.5*var(--sizeA));
   white-space: nowrap;
 }
 .list > li:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 50rem) {
+  :root{
+    --sizeA:0.8rem;
+  }
+}
+@media screen and (max-width: 32rem) {
+  :root{
+    --sizeA:0.7rem;
+  }
+  .menu{
+    padding: calc(2*var(--sizeA)) calc(2.6*var(--sizeA));
+  }
+}
+@media screen and (max-width: 18rem) {
+  :root{
+    --sizeA:0.5rem;
+  }
+  .menu{
+    padding: calc(2*var(--sizeA)) calc(2.3*var(--sizeA));
+  }
+}
