@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Fontdiner Swanky";
-  src: url("../fonts/FontdinerSwanky-Regular.ttf")
-    format("truetype");
+  src: url("../fonts/FontdinerSwanky-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,10 +11,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-family: monospace;
   color: white;
   background-color: #262626;
   font-weight: 800;
+  min-width: 100vw;
+  min-height: 5rem;
+}
+.menuOptions,
+.contactBtn {
+  text-transform: uppercase;
 }
 .list {
   display: flex;
@@ -27,7 +33,19 @@
   padding: 0.8rem 2rem;
   margin: -0.5rem 0;
   font-size: 1.2rem;
+   transition: background-color 0.5s ease;
 }
-.logo{
-    font-family: "Fontdiner Swanky";
+.contactBtn:hover {
+    border: 0.2rem solid white;
+    color:#262626;
+    background-color: white;
 }
+.logo {
+  font-family: "Fontdiner Swanky";
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.list > li:hover {
+  cursor: pointer;
+}
+
